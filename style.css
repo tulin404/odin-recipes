@@ -9,14 +9,13 @@
     padding: 0;
 
     background-color: var(--main-color);
-
+    font-family: Inter, ui-serif;
 }
 
 .hero {
-    height: 200px;
+    height: min-content;
     width: 100%;
     text-align: center;
-    font-family: Inter, ui-serif;
 }
 
 #hero-title {
@@ -28,4 +27,27 @@
 #hero-description {
     color: var(--secondary-text-color);
     font-size: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.list {
+    color: var(--main-text-color);
+    height: 400px;
+    text-align: center;
+}
+
+.list-item {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.link {
+    color: var(--secondary-color);
+    font-style: italic;
+    text-decoration: none;
+}
+
+#list-title {
+    font-weight: normal;
+    margin-bottom: 35px;
 }
