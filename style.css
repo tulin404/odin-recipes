@@ -3,12 +3,29 @@
     --secondary-color: #a9792b;
     --main-text-color: #e5e7eb;
     --secondary-text-color: #99a1af;
-    
+
     border: 0;
     margin: 0;
     padding: 0;
+
+    background-color: var(--main-color);
+
 }
 
 .hero {
-    
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-family: Inter, ui-serif;
+}
+
+#hero-title {
+    color: var(--main-text-color);
+    font-size: 70px;
+    padding: 20px;
+}
+
+#hero-description {
+    color: var(--secondary-text-color);
+    font-size: 20px;
 }
