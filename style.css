@@ -12,6 +12,12 @@
     font-family: Inter, ui-serif;
 }
 
+body {
+    /* VISIBILTY HIDDEN FOR THE ELEMENTS BE INVISIBLE WHEN ENTERING PAGE */
+    /* COWORKING WITH THE fade-up ANIMATION */
+    visibility: hidden;
+}
+
 .hero {
     height: min-content;
     width: 100%;
@@ -22,18 +28,21 @@
     color: var(--main-text-color);
     font-size: 70px;
     padding: 20px;
+    animation: fade-up 1s 0.5s forwards;
 }
 
 #hero-description {
     color: var(--secondary-text-color);
     font-size: 20px;
     padding: 0 20px 20px 20px;
+    animation: fade-up 1s 1.5s forwards;
 }
 
 .list {
     color: var(--main-text-color);
     height: 400px;
     text-align: center;
+    animation: fade-up 1s 2.5s forwards;
 }
 
 .list-item {
@@ -50,4 +59,17 @@
 #list-title {
     font-weight: normal;
     margin-bottom: 35px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.8);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        visibility: visible;
+    }
 }
