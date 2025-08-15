@@ -96,11 +96,13 @@ ul li {
 
 @keyframes fade-in {
     0% {
+        transform: translateX(-30px);
         opacity: 0;
         transform: translateX(-30px);
     }
 
     100% {
+        transform: translateY(0px);
         opacity: 1;
         visibility: visible;
         transform: translateX(0px);
